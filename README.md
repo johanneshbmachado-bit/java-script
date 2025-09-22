@@ -8,14 +8,17 @@
 <body>
     <h1>Java-Script</h1>
     <p>Salve</p>
-
-    <script>
+ <script>
         var nome = prompt('Qual e o seu nome?')
         alert('Seja muito bem vindo ' + nome )
         var n1= Number(prompt('agr ' +nome +' digite um numero:'))
         var n2= Number(prompt('Digite outro numero por favo:'))
-        var s= n1 + n1
+        var s= n1 + n2
         alert('A soma dos valores e : ' + s)
+
+        prompt('Vamos fazer outras contas?')
+        var n3= Number(prompt('Digite um numero:'))
+        var n4= Number(prompt('Digte outro numero:'))
+        var mult= n3*n4
+        alert('A multiplicaçao desses numeros e: ' + mult)
     </script>
-</body>
-</html>

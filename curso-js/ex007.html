@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escola</title>
+</head>
+<body>
+    <h1>Sistema de Notas</h1>
+    Nota Atual<input type="number" name="txtnot" id="txtnot">
+    <input type="button" value="Verificar" onclick="calcular()">
+    <div id="res">
+
+    </div>
+
+    <script>
+        function calcular(){
+            var txtnot = document.querySelector('input#txtnot')
+            var res = document.querySelector('div#res')
+            var not = Number(txtnot.value)
+            res.innerHTML = `A sua nota atual e ${not}`
+            if (not<5){
+                res.innerHTML += '<p>Você esta <strong>Reprovado</strong> por Nota abixa</p> '
+            }
+            res.innerHTML +='<p>Sempre se dedique ao maximo</p>'
+        }
+    </script>
+</body>
+</html>

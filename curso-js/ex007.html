@@ -21,8 +21,14 @@
             res.innerHTML = `A sua nota atual e ${not}`
             if (not<5){
                 res.innerHTML += '<p>Você esta <strong>Reprovado</strong> por Nota abixa</p> '
+                res.innerHTML +='<p>Se dedique mais!</p>'
             }
-            res.innerHTML +='<p>Sempre se dedique ao maximo</p>'
+            else if(not>=5)
+                {res.innerHTML += '<p>Voce esta <strong>Arpvoado</strong> parabens</p>'
+            res.innerHTML +='<p>Sempre se dedique ao maximo</p>'}
+
+            else if(not>10)
+            res.innerHTML += '<p>Sua nota esta <strong>Invalida</strong>'
         }
     </script>
 </body>
